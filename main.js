@@ -23,3 +23,30 @@ function showSlides(n) {
   }
   slides[indexSlide - 1].style.display = "block"; // se visualiza el slide actual ya que se cambia a "block"
 }
+
+function print() {
+  var a = document.getElementById("firstname").value;
+  var b = document.getElementById("lastname").value;
+  var c = document.getElementById("email").value;
+
+  console.log(a);
+  console.log(b);
+  console.log(c);
+}
+
+const form = document.getElementById("formcontact");
+const a = document.getElementById("firstname");
+const b = document.getElementById("lastname");
+const c = document.getElementById("email");
+
+form.addEventListener("submit", (event) => {
+  var z = a.value;
+  var x = b.value;
+  var y = c.value;
+  if (z == "" || x == "" || y == "") {
+    alert("Error. Some fields are empty.");
+  } else {
+    alert("Form was submitted successfully");
+    return true;
+  }
+});

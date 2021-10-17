@@ -18,9 +18,9 @@
 
       <ul class="nav-content">
         <li id="about-me"><a href="#me-title">About Me</a></li>
-        <li id="experience"><a href="">Experience</a></li>
+        <li id="experience"><a href="#exp">Experience</a></li>
         <li id="skills"><a href="">Skills</a></li>
-        <li id="contact-me"><a href="">Contact Me</a></li>
+        <li id="contact-me"><a href="#contact">Contact Me</a></li>
       </ul>
     </div>
   </nav>
@@ -67,7 +67,7 @@
     </div>
   </div>
 
-  <div class="exp-title"><h1>Experience</h1></div>
+  <div id="exp" class="exp-title"><h1>Experience</h1></div>
   <div class="experience">
     <div class="exp-card">
       <div id="proyect1" class="proyect">
@@ -103,6 +103,49 @@
           </p></a
         >
         <img src="img/rust.png" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <div id="contact" class="contact">
+    <div class="contact-container">
+      <div id="contact" class="contact-title"><h1>Contact Me</h1></div>
+      <div class="form-contact">
+        <form name="formcontact" id="formcontact">
+          <div class="field">
+            <label for="firstname">First Name </label>
+            <input
+              type="text"
+              id="firstname"
+              name="firstname"
+              class="box"
+              placeholder="Enter your name..."
+            />
+          </div>
+          <div class="field">
+            <label for="lastname">Last Name </label>
+            <input
+              type="text"
+              id="lastname"
+              name="lastname"
+              class="box"
+              placeholder="Enter your last name..."
+            />
+
+            <div class="field">
+            <label for="email">Email </label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              class="box"
+              placeholder="johndoe@email.com"
+            />
+
+            <button name="submit" id="submit" onclick="print()" type="submit" class="btn">Submit</button>
+
+          </div>
+        </form>
       </div>
     </div>
   </div>
