@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400;500&family=Montserrat:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  width: 100%;
+  background: #fafafa;
+  position: relative;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  left: 0px;
+  top: 0px;
+  background: #845ec2;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  height: 50%;
+  margin: 15px 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  text-align: center;
+}
+
+.nav-title a {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 24px;
+  padding: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+li a:hover {
+  color: #845ec2;
+  background-color: white;
+}
+
+a {
+  height: 100%;
+  padding: 21px 10px;
+  display: block;
+  text-decoration: none;
+  font-weight: 300;
+  color: white;
+  text-transform: capitalize;
+}
+
+.nav-content {
+  margin-right: -10px;
+}
